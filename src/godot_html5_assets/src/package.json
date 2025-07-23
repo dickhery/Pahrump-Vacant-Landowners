@@ -1,0 +1,21 @@
+{
+  "name": "pahrump-vacant-land-owners",
+  "version": "1.0.0",
+  "description": "Website for Pahrump Vacant Land Owners",
+  "scripts": {
+    "start": "node setupEnv.js && parcel *.html --open",
+    "build": "node setupEnv.js && parcel build *.html --public-url ./",
+    "prestart": "node setupEnv.js",
+    "prebuild": "node setupEnv.js"
+  },
+  "dependencies": {
+    "@dfinity/agent": "^0.15.7",
+    "@dfinity/auth-client": "^0.15.7",
+    "isomorphic-fetch": "^3.0.0",
+    "parcel": "^2.15.4"
+  },
+  "devDependencies": {
+    "buffer": "^6.0.3",
+    "process": "^0.11.10"
+  }
+}
